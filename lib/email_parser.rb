@@ -9,7 +9,7 @@ class EmailParser
     @emails = emails
   end
   def parse
-    @email_list = @emails.split(/[\s,]/).uniq
+    @email_list = @emails.split(/[\s|,]/).uniq
   end
 
 end
